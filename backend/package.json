@@ -12,7 +12,7 @@
     "start:env": "node --env-file=.env src/server.js"
   },
   "engines": {
-    "node": ">=20.19"
+    "node": ">=22.x"
   },
   "license": "MIT",
   "dependencies": {
