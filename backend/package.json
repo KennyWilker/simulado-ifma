@@ -1,0 +1,32 @@
+{
+  "name": "simulado-ifma-api",
+  "version": "1.0.0",
+  "description": "API do Simulado IFMA (Node.js + Express + MongoDB)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js",
+    "test": "node --test --test-concurrency=1 --test-reporter=spec tests/*.test.js",
+    "seed:env": "node --env-file=.env src/seed.js",
+    "start:env": "node --env-file=.env src/server.js"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.10.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.0"
+  }
+}
